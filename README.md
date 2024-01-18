@@ -1,2 +1,2 @@
 # haitianXu.github.io
---> www.haitianxu.com
+--> http://haitianxu.github.io
