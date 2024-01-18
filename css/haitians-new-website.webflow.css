@@ -1,6 +1,6 @@
 :root {
   --black: #141414;
-  --dim-grey: #5b5b5b;
+  --dim-grey: #8f8f8f;
   --white-smoke: whitesmoke;
   --white: white;
   --gainsboro: #e5e5e5;
@@ -75,18 +75,32 @@ p {
   flex: 1;
   justify-content: center;
   align-items: center;
+  padding-top: 0%;
+  padding-bottom: 0%;
+  padding-left: 7%;
   display: flex;
 }
 
 .hero-content-02 {
+  border-radius: 0;
+  flex-direction: column;
   flex: 1;
+  justify-content: center;
+  align-items: center;
+  padding: 7%;
   display: flex;
   position: relative;
   overflow: hidden;
 }
 
 .image {
+  max-height: 100%;
   max-width: 100%;
+  box-shadow: 8px 8px 11px 4px var(--dim-grey);
+  opacity: 1;
+  outline-offset: 0px;
+  border-radius: 45px;
+  outline: 3px #b6b6b6;
   flex: 1;
   margin-top: 0;
   margin-bottom: 0;
@@ -212,8 +226,8 @@ p {
 
 .hero-subcontent {
   max-width: 533px;
-  padding-top: 38px;
-  padding-bottom: 23px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .link-block {
@@ -254,9 +268,12 @@ p {
   width: 160px;
   height: 72px;
   background-color: var(--white-smoke-2);
+  border-radius: 10px;
   justify-content: center;
   align-items: center;
   margin-right: 32px;
+  padding-left: 5px;
+  padding-right: 5px;
   display: flex;
 }
 
@@ -406,6 +423,7 @@ p {
 }
 
 .branding-logo {
+  color: rgba(255, 255, 255, 0);
   margin-right: 16px;
 }
 
@@ -2063,6 +2081,7 @@ p {
 
 .image-cove {
   background-color: var(--white-smoke-2);
+  border-radius: 40px;
   position: absolute;
   top: 0%;
   bottom: 0%;
@@ -2128,7 +2147,7 @@ p {
   flex: 1;
   margin-left: auto;
   margin-right: auto;
-  padding: 20px 3%;
+  padding: 20px 3% 20px 1%;
 }
 
 .image-30 {
@@ -2147,6 +2166,10 @@ p {
 
 .brand {
   margin-top: 10px;
+}
+
+.brand.w--current {
+  margin-top: 0;
 }
 
 .menu-info {
@@ -2280,11 +2303,7 @@ p {
 .project-tittle-box {
   color: #fff;
   text-transform: uppercase;
-  background-image: none;
-  background-position: 0%;
-  background-repeat: no-repeat;
-  background-size: 26px 26px;
-  padding-left: 72px;
+  padding-left: 0;
   font-size: 32px;
   font-weight: 500;
   line-height: 40px;
@@ -2507,6 +2526,10 @@ p {
   display: flex;
 }
 
+.image-38, .image-39, .image-40, .image-41 {
+  display: block;
+}
+
 @media screen and (min-width: 1280px) {
   .heading-01 {
     overflow: hidden;
@@ -2514,6 +2537,11 @@ p {
 
   .image-3 {
     right: -3%;
+  }
+
+  .branding-logo {
+    flex: 0 auto;
+    align-self: auto;
   }
 
   .recent-content-01 {
@@ -2526,9 +2554,24 @@ p {
     display: flex;
   }
 
+  .project-tittle-box {
+    order: 0;
+    align-self: center;
+    padding-left: 0;
+  }
+
+  .branding-content-02 {
+    justify-content: flex-start;
+    align-items: center;
+  }
+
   .portfolio-link {
     border-bottom: 1px none var(--white-smoke);
     text-decoration: none;
+  }
+
+  .image-38, .image-39, .image-40, .image-41 {
+    display: block;
   }
 }
 
@@ -2589,8 +2632,13 @@ p {
 }
 
 @media screen and (min-width: 1920px) {
+  .hero-content-01 {
+    padding-left: 3%;
+  }
+
   .hero-content-02 {
     justify-content: space-between;
+    padding: 4%;
     display: flex;
   }
 
@@ -3618,6 +3666,10 @@ p {
 
   .feature-link {
     min-height: auto;
+  }
+
+  .container-3 {
+    padding-left: 2%;
   }
 
   .image-30 {
